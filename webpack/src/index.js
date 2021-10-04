@@ -1,4 +1,3 @@
-import '../../emails/sass/style.scss'
 import router from './router'
 import connect from './socket'
 

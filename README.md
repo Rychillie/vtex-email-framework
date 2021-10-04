@@ -8,7 +8,6 @@
 
 ### :crossed_swords: Features
 
-* Sass
 * Hot Reload
 * Partial Files
 * Inline CSS
@@ -79,8 +78,6 @@ yarn test
 ### :books: References
 
 [BEM](https://www.integralist.co.uk/posts/bem)
-
-[Sass](https://sass-lang.com/guide)
 
 [Handlebars](https://handlebarsjs.com/)  
 

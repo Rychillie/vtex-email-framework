@@ -17,26 +17,5 @@ module.exports = merge(common, {
     new StylelintPlugin({
       fix: true,
     })
-  ],
-
-  module: {
-    rules: [
-      {
-        test: /\.(sa|sc|c|s)ss$/,
-        use: [
-          'style-loader',
-          'css-loader',
-          {
-            loader: 'sass-loader',
-            options: {
-              implementation: require('sass'),
-              sassOptions: {
-                includePaths: [resolve('emails', 'sass')],
-              }
-            },
-          },
-        ],
-      },
-    ]
-  }
+  ]
 })
