@@ -2,7 +2,6 @@ const { readdirSync, existsSync } = require('fs')
 const { resolve } = require('path')
 const { merge } = require('webpack-merge')
 const common = require('./webpack.common')
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin');
@@ -22,7 +21,6 @@ module.exports = merge(common, {
 
   plugins: [
     new CleanWebpackPlugin(),
-    new MiniCssExtractPlugin(),
     new HTMLInlineCSSWebpackPlugin(),
     ...templateFiles.map(file => {
       return new HtmlWebpackPlugin({

@@ -1,6 +1,7 @@
 const { readdirSync, existsSync } = require('fs');
 const { resolve } = require('path');
-const files = resolve('emails', 'dist')
+const useParentFolder = existsSync('../templates');
+const files = resolve(useParentFolder ? '..' : 'emails', 'dist')
 const app = require('../server/app')
 const request = require('isomorphic-fetch')
 const port = 3050
